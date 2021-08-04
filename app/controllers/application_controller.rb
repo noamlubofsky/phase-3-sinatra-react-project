@@ -24,9 +24,10 @@ class ApplicationController < Sinatra::Base
     message.to_json
   end 
 
-  get '/games/easy' do
-    games = Game.easy_games
+  get '/games/:difficulty' do
+    games = Game.return_riddles(:difficulty)
     games.to_json
   end
+
 
 end
