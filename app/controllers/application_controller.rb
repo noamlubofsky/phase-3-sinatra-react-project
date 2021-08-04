@@ -22,10 +22,10 @@ class ApplicationController < Sinatra::Base
       highscore: params[:highscore]
     )
     message.to_json
-  end 
+  end
 
   get '/games/:difficulty' do
-    games = Game.return_riddles(:difficulty)
+    games = Game.return_riddles(params[:difficulty])
     games.to_json
   end
 
