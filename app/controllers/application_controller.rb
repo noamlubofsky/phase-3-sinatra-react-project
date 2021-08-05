@@ -7,8 +7,8 @@ class ApplicationController < Sinatra::Base
   end
 
   post '/users' do
-    User.find_by(username: params[:username]) != nil ?
-    "this user already exists" :
+    # User.find_by(username: params[:username]) != nil ?
+    # "this user already exists" :
     user = User.create(
       username: params[:username]
     )
