@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 2021_08_03_185245) do
     t.string "question"
     t.string "answer"
     t.integer "level"
+    t.string "keyword"
   end
 
   create_table "users", force: :cascade do |t|

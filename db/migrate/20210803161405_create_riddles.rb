@@ -4,6 +4,7 @@ class CreateRiddles < ActiveRecord::Migration[6.1]
       t.string :question
       t.string :answer
       t.integer :level
+      t.string :keyword
     end
   end
 end
