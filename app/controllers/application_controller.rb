@@ -2,7 +2,7 @@ class ApplicationController < Sinatra::Base
   set :default_content_type, 'application/json'
   
   get '/users' do
-    users = User.all
+    users = User.high_score
     users.to_json
   end
 
